@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>一站式的策略社区券商平台</title>
+    <link rel="stylesheet" type="text/css" href="styles/iview.css">
+    <script type="text/javascript" src="js/vue.js"></script>
+    <script type="text/javascript" src="js/iview.js"></script>
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+<div id="app">
+        <Layout>
+            <Header>
+               <div class="wrapper-header">
+                  <i-menu mode="horizontal" :theme="theme1" active-name="1">
+                    <div class="wrapper-header-nav">
+                        <a href="home-cn.html" class="wrapper-header-nav-logo">
+                            <img src="img/bit.png">
+                        </a>
+                        <menu-item name="1">
+                          <tooltip content="即将到来" placement="top-start">
+                              交易
+                          </tooltip>
+                        </menu-item>
+                        <menu-item name="2">
+                            <a href="indicators.html#MA">指标</a>
+                        </menu-item>
+                        <menu-item name="3">
+                            <a href="https://cn.tradingview.com/markets/cryptocurrencies/ideas/" target="_blank">策略</a>
+                        </menu-item>
+                        <div class="wrapper-header-nav-list">
+                            <submenu name="4">
+                                <template slot="title">
+                                    简体中文
+                                </template>
+                                <menu-item name="4-1"><a href="home.html" class="afont">English</a></menu-item>
+                                <menu-item name="4-2"><a href="home-cn.html" class="afont">简体中文</a></menu-item>
+                            </submenu>
+                        </div>
+                    </div>
+                    
+                  </i-menu>
+               </div>
+               <div class="wrapper-header-con">
+                   <div class="wrapper-content">
+                       <h3>一站式的策略社区券商平台</h3>
+                        <tooltip content="即将到来" placement="top-start">
+                              <i-button type="warning">立刻注册</i-button>
+                        </tooltip>
+                        <tooltip content="即将到来" placement="top-end">
+                        <i-button type="warning" class="bgcolor">开始交易</i-button>
+                        </tooltip>
+                       <div class="wrapper-tab">
+                           <row>
+                                <i-col span="24">
+                                 <i-button type="info" class="bgcolor left" style="margin-left: 0px">Binance</i-button>
+                                 <i-button type="info" class="bgcolor left">OKEx</i-button>
+                                 <i-button type="info" class="bgcolor left">Bitfinex</i-button>
+                                 <i-button type="info" class="bgcolor left">BitMEX</i-button>
+                                 <i-button type="info" class="bgcolor left">Coinbase</i-button>
+                                 <i-button type="info" class="bgcolor left">Gate</i-button>
+                                 <i-button type="info" class="bgcolor line"></i-button>
+                                 <i-button type="info" class="bgcolor right">ETH</i-button>
+                                 <i-button type="info" class="bgcolor right">BTC</i-button>
+                                 <i-button type="info" class="bgcolor right">USDT</i-button>
+                                </i-col>
+                           </row>
+                           
+                       </div>
+                       <div class="wrapper-data">
+                        <!-- TradingView Widget BEGIN -->
+                        <div class="tradingview-widget-container">
+                          <div class="tradingview-widget-container__widget"></div>
+                          <div class="tradingview-widget-copyright"></div>
+                          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-screener.js" async>
+                          {
+                          "width": 900,
+                          "height": 500,
+                          "theme": "dark",
+                          "defaultColumn": "overview",
+                          "screener_type": "crypto_mkt",
+                          "displayCurrency": "USD",
+                          "colorTheme": "dark",
+                          "transparency": false,
+                          "locale": "en"
+                           }
+                          </script>
+                        </div>
+                        <!-- TradingView Widget END -->
+                       </div>
+                   </div>
+               </div>
+           </Header>
+           <Content >
+            <div class="content1">
+                <div class="con-con">
+                    <row>
+                       <i-col span="8">
+                           <p class="dollar-data" style="padding-left: 44px;">$--</p>
+                           <p class="time-data">24HOUR VOLUME</p>
+                       </i-col>
+                       <i-col span="8">
+                           <p class="dollar-data">$--</p>
+                           <p class="time-data">7HOUR VOLUME</p>
+                       </i-col>
+                       <i-col span="8">
+                           <p class="dollar-data" style="padding-right: 37px">$--</p>
+                           <p class="time-data">30HOUR VOLUME</p>
+                       </i-col>
+                    </row>
+                </div>
+            </div>
+            <div class="content2" >
+                <div class="con-con2">
+                    <p class="con2-title">BitUtopian平台特点</p>
+                    <p class="con2-detail">BitUtopian是一个功能齐全的现货交易平台的主要数字资产和加密货币，<br/>包括Bitcoin, Ethereum, EOS, Litecoin, Ripple, NEO, Monero和更多。
+                    </p>
+                    <row>
+                       <i-col span="8">
+                           <img src="img/icon1.png" class="icon-img">
+                           <div class="con-icon left">
+                               <p class="icon-p1">交易</p>
+                               <p class="icon-p2">BitUtopian提供了世界上最具流动性的订货单，允许用户轻松地交换比特币、以太坊(Ethereum)、EOS、莱特币(Litecoin)、Ripple、NEO和许多其他数字资产，而且几乎没有任何下滑。<p>
+                               
+                           </div>
+                       </i-col>
+                       <i-col span="8">
+                           <img src="img/icon2.png" class="icon-img">
+                           <div class="con-icon left">
+                               <p class="icon-p1">指标</p>
+                               <p class="icon-p2">
+                              BitUtopian为用户提供了传统股票市场的一些经济学指标如何在加密货币市场应用，更好的了解和自我分析Bitcoin和许多其他数字资产波动趋势。 <p>
+                              
+                           </div>
+                       </i-col>
+                       <i-col span="8">
+                           <img src="img/icon3.png" class="icon-img">
+                           <div class="con-icon left">
+                               <p class="icon-p1">策略</p>
+                               <p class="icon-p2">BitUtopian将要接入TradingView的加密货币市场观点，更加便捷在交易和观点中进行切换，让更多的用户分享自己的观点并且进行交流。<p>
+                               
+                           </div>
+                       </i-col>
+                    </row>
+                </div>
+            </div>
+            <div class="content3">
+                <div class="con-con3">
+                    <row>
+                        <i-col span="10">
+                            <p class="con3-title">什么是指标?</p>
+                            <p class="con3-title2">
+                              BitUtopian将会整理一些主流的传统股票市场指标，当然这些也同样适用于加密货币市场，帮助用户更好的掌握市场变化规律。如布林带，1）当布林线的上、中、下轨线同时向上运行时，表明股价强势特征非常明显，股价短期内将继续上涨，投资者应坚决持股待涨或逢低买入。2）当布林线的上、中、下轨线同时向下运行时，表明股价的弱势特征非常明显，股价短期内将继续下跌，投资者应坚决持币观望或逢高卖出。
+                            </p>
+                            <a href="indicators.html">
+                              <i-button type="warning" ghost>让我们开始学习</i-button>
+                            </a>
+                        </i-col>
+                        <i-col span="2" style="color: #fff">.
+                        </i-col>
+                        <i-col span="12" >
+                            <!-- TradingView Widget BEGIN -->
+                            <div class="tradingview-widget-container">
+                              <div id="tradingview_9ada4"></div>
+                              <div class="tradingview-widget-copyright"></div>
+                              <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+                              <script type="text/javascript">
+                              new TradingView.widget(
+                              {
+                              "width": "100%",
+                              "height": 348,
+                              "symbol": "BINANCE:BTCUSDT",
+                              "interval": "D",
+                              "timezone": "Etc/UTC",
+                              "theme": "dark",
+                              "style": "1",
+                              "locale": "en",
+                              "toolbar_bg": "#f1f3f6",
+                              "enable_publishing": false,
+                              "save_image": false,
+                              "studies": [
+                                "BB@tv-basicstudies"
+                              ],
+                              "container_id": "tradingview_9ada4"
+                            }
+                              );
+                              </script>
+                            </div>
+                            <!-- TradingView Widget END -->
+                        </i-col>
+                    </row>
+                </div>
+            </div>
+
+            <div class="content4">
+                <div class="con-con4">
+                    <p class="con4-title">策略</p>
+                    <p class="con4-detail">BitUtopian将要接入TradingView的加密货币市场观点，它更会是一个很棒的策略社区。
+                    </p>
+                    <div class="ul-data">
+                      <row :gutter="25">
+                         <i-col span="8">
+                           <div class="border-style">
+                             <p class="p-title">【分析篇】BTC——疯狂的比特币，贪婪的投资者！何处才是顶？</p>
+                             <p class="p1">XBTUSD</p>
+                             <p class="p2"><img src="img/imgcn1.png" class="icon-ulimg"></p>
+                             <p class="p3">
+                               <span class="pname">LuFan</span>
+                               <span class="right phours">612 浏览・6月 26</span>
+                             </p>
+                             <p class="pcn4">
+                              最近的加密货币市场多少有些疯狂，疯狂在于比特币的上涨，让很多人高到不敢买！纷纷屯了主流币，山寨币，前者可能受到市场的共识认可也算可以，后者有些币仍半死不活，偶有作妖。 回看我前期发布的一些观点，我的看法一直都是涨！ 但到了这个阶段我想泼…
+                             </p>
+                            </div>
+                         </i-col>
+                         <i-col span="8">
+                           <div class="border-style">
+                             <p class="p-title">比特幣兌美元(BTCUSD)-大餅動向20190124
+</p>
+                             <p class="p1">BTCUSD</p>
+                             <p class="p2"><img src="img/imgcn2.png" class="icon-ulimg"></p>
+                             <p class="p3">
+                               <span class="pname">TouFrancis</span>
+                               <span class="right phours">1194 浏览・1月 24</span>
+                             </p>
+                             <p class="pcn4">
+                               Hi everyone， 　　一如既往...！我們看結果，然後跟隨，調整繼續往下看結果...其餘的再多的理論都毫無意義...是不是？ TouFrancis語錄- （以上內容若需轉載或部分引用請註明出處） 關於＂進階ＰＡ＂，我所知道並認可的一些重要細節 1.學習從其他交…
+                             </p>
+                            </div>
+                         </i-col>
+                         <i-col span="8">
+                           <div class="border-style">
+                             <p class="p-title">比特币出现2000美元回调，牛市多暴跌</p>
+                             <p class="p1">XBTUSD</p>
+                             <p class="p2"><img src="img/imgcn3.png" class="icon-ulimg"></p>
+                             <p class="p3">
+                               <span class="pname">Pento_Investment</span>
+                               <span class="right phours">3037 浏览・6月 27</span>
+                             </p>
+                             <p class="pcn4">
+                               昨天下午在市场冲击13000美元的时候，我在微博上提到了昨天可能会是一个重要的高点。因为市场在加速，甚至超出了对数坐标轴的趋势通道，很显然多头在逼空，昨晚美国时间的行情一度接近1.4万美元，大量空头被迫平仓后，以多头的获利出局而结束本轮…
+                             </p>
+                            </div>
+                         </i-col>
+                      </row>
+                    </div>
+                     <a href="https://cn.tradingview.com/markets/cryptocurrencies/ideas/" target="_blank"><i-button type="warning" ghost>让我们开始学习</i-button></a>
+                </div>
+            </div>
+            <div class="content5">
+              <div class="con-con5">
+                <p class="con5-title">社区</p>
+                <row>
+                  <i-col span="24">
+                      <a href="https://twitter.com/Baron56410187" target="_blank">
+                       <img src="img/bottom1.png">
+                      </a>
+                      <a href="http://t.me/BitUtopian" target="_blank">
+                       <img src="img/bottom2.png">
+                      </a>
+                      <a href="https://www.facebook.com/baron.frank.5220" target="_blank">
+                       <img src="img/bottom3.png">
+                      </a>
+                      <a href="https://medium.com/@baronfrank" target="_blank">
+                       <img src="img/bottom4.png">
+                       </a>
+                     <a href="https://github.com/smithbaron/BitUtopian" target="_blank">
+                       <img src="img/bottom5.png" style="margin-right: 0;">
+                     </a>
+                  </i-col>
+                 </row>
+              </div>
+            </div>
+           </Content>
+           <Footer>
+            <div class="footer">
+                <p>Copyright © 2013-2019 XXXX Inc. All rights reserved.</p >
+            </div>
+           </Footer>
+       </Layout>
+</div>
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            theme1: 'dark',
+        },
+        methods: {
+        }
+    })
+  </script>
+</body>
+</html>
